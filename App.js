@@ -1,21 +1,39 @@
-// JS Object
-const heading = React.createElement("h1", 
-  {id:"heading"},
-  "Hello World From React"
-); // core thing
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div",{ id: "child" },
-    [
-      React.createElement("h1", {}, "Heading 1"),
-      React.createElement("h2",{},"Heading 2"),
-    ])
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *  - Search
+ *  - Restaurant Container
+ *    - Restaurant Card
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
+
+const Title =()=> (
+  <h1 id="heading" className="head">
+    Title
+  </h1>
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(parent)
+const HeadingComponent=()=>{
+  return (
+    <>
+      {Title()}
+      <Title />
+      <Title></Title>
+      <h1>Namaste React Functional Component</h1>
+    </>
+  );
+}
 
-root.render(parent);
- 
+// <HeadingComponent/> is understood by babel
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<HeadingComponent/>);
+root.render(HeadingComponent())
