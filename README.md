@@ -52,3 +52,7 @@
 Normal JS utility functions - written by FB devs
 - useState()
 - useEffect()
+
+# 2 types of Routing in web apps - 
+1. Client Side Routing
+2. Server Side Routing

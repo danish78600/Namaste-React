@@ -32,7 +32,8 @@
   },
   "dependencies": {
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^6.30.3"
   },
   "browsersList": [
     "last 2 Chrome versions"
